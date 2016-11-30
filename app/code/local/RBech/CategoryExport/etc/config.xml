@@ -6,26 +6,14 @@
         </RBech_CategoryExport>
     </modules>
     <global>
-        <!-- Define models -->
-        <models>
-            <categoryexport>
-                <class>RBech_CategoryExport_Model</class>
-            </categoryexport>
-        </models>
+        <blocks>
+            <adminhtml>
+                <rewrite>
+                    <catalog_category_tab_product>RBech_CategoryExport_Block_Adminhtml_Catalog_Category_Tab_Product</catalog_category_tab_product>
+                </rewrite>
+            </adminhtml>
+        </blocks>
     </global>
-    <adminhtml>
-        <events>
-            <core_block_abstract_prepare_layout_after>
-                <observers>
-                    <categoryexport>
-                        <class>categoryexport/observer</class>
-                        <method>addExport</method>
-                    </categoryexport>
-                </observers>
-            </core_block_abstract_prepare_layout_after>
-        </events>
-    </adminhtml>
-    <!-- Add admin router -->
     <admin>
         <routers>
             <adminhtml>
