@@ -25,4 +25,16 @@
             </core_block_abstract_prepare_layout_after>
         </events>
     </adminhtml>
+    <!-- Add admin router -->
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <RBech_CategoryExport before="Mage_Adminhtml_Catalog_CategoryController">RBech_CategoryExport_Adminhtml</RBech_CategoryExport>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
 </config>
