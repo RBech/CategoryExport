@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <RBech_CategoryExport>
+            <active>true</active>
+            <codePool>local</codePool>
+        </RBech_CategoryExport>
+    </modules>
+</config>
